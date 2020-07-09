@@ -1,0 +1,49 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    
+}
+
+.main {
+    background: linear-gradient(45deg, rgb(3, 148, 148), rgb(3, 105, 92));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.edit {
+  padding: 10px 56px;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.watch {
+  padding: 10px 41px;
+  font-size: 30px;
+}
+
+.main-form {
+    background-color: white;
+  padding: 40px 60px 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+input {
+  background: lightgray;
+  color: rgb(67, 68, 68);
+  border-style: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+input:hover {
+  background: gray;
+  color: rgb(240, 238, 238);
+}
