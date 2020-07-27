@@ -46,3 +46,16 @@ input:hover {
   background: gray;
   color: rgb(240, 238, 238);
 }
+
+.fas{
+  color: rgb(2, 10, 10);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 30px;
+  box-shadow: 0 0 7px 0 rgb(67, 68, 68);
+}
+.fas:hover{
+  color: white;
+  
+}

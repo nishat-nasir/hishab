@@ -7,14 +7,51 @@
     <link rel="stylesheet" href="watch.css">
 </head>
 <body>
+    <div class="container">
         <ul>
             <li class="total"><h3 class="total" id="header">Total</h3></li>
-            <li class="total"><img src="https://picsum.photos/204"><h3 class="total">$3534534</h3></li>
-            <li class="total"><img src="https://picsum.photos/204"><h3 class="total">$3534534</h3></li>
-            <li class="total"><img src="https://picsum.photos/204"><h3 class="total">$3534534</h3></li>
-            <li class="total"><img src="https://picsum.photos/204"><h3 class="total">$3534534</h3></li>
-            <li class="total"><img src="https://picsum.photos/204"><h3 class="total">$3534534</h3></li>
+            <li class="total"><img src="../he.jpg"><h3 id="total_first">$3534534</h3></li>
+            <li class="total"><img src="../he.jpg"><h3 id="total_second">$3534534</h3></li>
+            <li class="total"><img src="../he.jpg"><h3 id="total_third">$3534534</h3></li>
+            <li class="total"><img src="../he.jpg"><h3 id="total_fourth">$3534534</h3></li>
+            <li class="total"><img src="../he.jpg"><h3 id="total_fifth">$3534534</h3></li>
+           
         </ul>
+
+        <input type="button" class="details" value="Check Details">
+        <input type="button" id="home" value="Home">
+
+        
     </div>
+
+
+          
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCannd6rOryk9T3tliIijOhF3cnIJd1uKc",
+            authDomain: "hishab-123.firebaseapp.com",
+            databaseURL: "https://hishab-123.firebaseio.com",
+            projectId: "hishab-123",
+            storageBucket: "hishab-123.appspot.com",
+            messagingSenderId: "496675171713",
+            appId: "1:496675171713:web:4d93d4bdaa7e753327cc80",
+            measurementId: "G-ZB6JCEESJ4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script src="watch.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
-const pass_input = document.getElementById('password')
-const login_btn = document.getElementById('button')
-const err = document.getElementById('error')
+const pass_input = document.getElementById('password');
+const login_btn = document.getElementById('login');
+const err = document.getElementById('error');
+const home = document.getElementById('home');
 
 login_btn.addEventListener('click', ()=>{
     if(+pass_input.value === 123){
@@ -13,3 +14,9 @@ login_btn.addEventListener('click', ()=>{
     }
     
 })
+
+home.addEventListener('click', () =>{
+        window.location = "../index.html";    
+    
+} )
+

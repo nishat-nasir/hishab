@@ -9,34 +9,114 @@
 <body>
     <div class="container">
         <h1 class="fill-up">Fill Up</h1>
-        <form action="" class="edit_form">
+        <form id="edit_form">
             <div class="date" class="box">
                 <h1>Date</h1>
-                <input type="text" placeholder="Month"><br/>
-                <input type="text" placeholder="Year">
+
+                <select name="month" id="month" class="select">
+                    <option value="none"></option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+
+                <select name="month" id="year" class="select">
+                    <option value="none"></option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    
+                </select>
             </div>
 
-            <div class="home-rent" class="box">
-                <h1>Home Rent</h1>
-                <input type="text" placeholder="Home No"><br/>
-                <input type="number" placeholder="Amount">
+            <div id="hidden_file" class="box" style="display: none;">
+                <div class="home-rent" class="box">
+                    <h1>Home Rent</h1>
+                    <select name="month" id="room_num" class="select">
+                        <option value="none"></option>
+                        <option value="201">201</option>
+                        <option value="202">202</option>
+                        <option value="203">203</option>
+                        <option value="204">204</option>
+                        <option value="205">205</option>
+                        <option value="206">206</option>
+                        <option value="207">207</option>
+                    </select>
+                    <input style="display: none;" type="number" id="room_rent_bill" placeholder="Rent Amount">
+                </div>
+    
+                <div class="bills" style="background-color: rgb(35, 158, 167);;">
+                    <h1>Bills</h1>
+                    <select name="bills" id="bills" class="select">
+                        <option value="none"></option>
+                        <option value="gas">Gas</option>
+                        <option value="elec">Electricity</option>
+                        <option value="water">Water</option>
+                    </select>
+                    <input style="display: none;" type="number" id="gas_bill"  placeholder="Bill Amount">
+                    
+                </div>
+    
+                <div class="others" class="box">
+                    <h1>Others</h1>
+                    <input type="number" id="other_bill" placeholder="Amount"><br/>
+                    <textarea  maxlength="50" id="other_expense" placeholder="write here.."></textarea>
+                </div>
+
+
+                <input type="submit" id="submit" value="Submit">
+                <input type="button" id="update" value="Update" />
+                
             </div>
 
-            <div class="bills" class="box">
-                <h1>Bills</h1>
-                <input type="number" placeholder="Gas"><br/>
-                <input type="number" placeholder="Electricity"><br/>
-                <input type="number" placeholder="Water">
-            </div>
+            <input type="button" id="home" value="Home" />
 
-            <div class="others" class="box">
-                <h1>Others</h1>
-                <input type="number" placeholder="Amount"><br/>
-                <textarea ></textarea>
-            </div>
+            
 
-            <input type="submit" id="submit">
+           
+            
         </form>
     </div>
+
+    
+
+       
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCannd6rOryk9T3tliIijOhF3cnIJd1uKc",
+    authDomain: "hishab-123.firebaseapp.com",
+    databaseURL: "https://hishab-123.firebaseio.com",
+    projectId: "hishab-123",
+    storageBucket: "hishab-123.appspot.com",
+    messagingSenderId: "496675171713",
+    appId: "1:496675171713:web:4d93d4bdaa7e753327cc80",
+    measurementId: "G-ZB6JCEESJ4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src="edit_form.js"></script>
 </body>
 </html>

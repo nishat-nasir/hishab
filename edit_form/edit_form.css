@@ -16,7 +16,7 @@ body{
 
 .fill-up{
     background-color:  rgb(10, 48, 41);
-    padding: 20px 140px;
+    padding: 20px;
     border-radius: 20px;
     margin-bottom: 10px;
     color: rgb(255, 251, 251);
@@ -25,7 +25,7 @@ body{
 
 }
 
-.edit_form{
+#edit_form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,11 +34,11 @@ body{
     border-radius: 20px;
 }
 
-.edit_form div:nth-child(even) {
+#edit_form div:nth-child(even) {
     background: rgb(87, 200, 172);
 }
 
-.edit_form div:nth-child(odd) {
+#edit_form div:nth-child(odd) {
     background: rgb(35, 158, 167);
 }
 
@@ -50,7 +50,7 @@ input, textarea{
     outline: none;
 }
 
-.edit_form div{
+#edit_form div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,3 +59,46 @@ input, textarea{
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
+
+textarea {
+    resize: none;
+  }
+
+.select{
+    padding: 9px 32px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background-color: rgb(5, 102, 102);
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+.select:hover{
+    background-color:  rgb(4, 59, 59);
+}
+
+#home, #submit, #update{
+    padding: 8px 20px;
+    font-size: 25px;
+    width: 100%;
+    background-color: rgb(7, 65, 75);
+    color: rgb(209, 209, 209);
+    outline: none;
+    margin: 0;
+    margin-top: 10px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  }
+  #home:hover, #submit:hover, #update:hover{
+    background-color: rgb(53, 168, 168);
+    color: rgb(255, 255, 255);
+  }
+
+
+  ::placeholder {
+    text-align: center;
+    padding: 0;
+    margin:0;
+  }
