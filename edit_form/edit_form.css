@@ -35,11 +35,13 @@ body{
 }
 
 #edit_form div:nth-child(even) {
-    background: rgb(87, 200, 172);
+    background: rgb(77, 179, 153);
 }
-
-#edit_form div:nth-child(odd) {
-    background: rgb(35, 158, 167);
+.box{
+    background-color: rgb(206, 147, 147);
+}
+#edit_form div:nth-child(even) {
+    background: rgb(133, 217, 223);
 }
 
 input, textarea{
@@ -101,4 +103,38 @@ textarea {
     text-align: center;
     padding: 0;
     margin:0;
+  }
+
+
+
+
+  .showAll{
+      font-family: Arial, Helvetica, sans-serif;
+      list-style-type: none;
+      font-weight: 600;
+      color: black;
+      margin: 0;
+  }
+
+  .box1{
+      background-color: rgb(80, 150, 138);
+  }
+
+  button{
+      background-color: rgb(19, 138, 122);
+      color: white;
+      border-style: none;
+      border-radius: 5px;
+      padding: 5px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+      font-weight: 600;
+      outline: none;
+  }
+
+  button:hover{
+      background-color: rgb(12, 85, 81);
+  }
+
+  .date{
+    transition: 2s;
   }

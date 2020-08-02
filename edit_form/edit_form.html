@@ -9,12 +9,23 @@
 <body>
     <div class="container">
         <h1 class="fill-up">Fill Up</h1>
-        <form id="edit_form">
-            <div class="date" class="box">
+        <form id="edit_form" style="background-color: rgb(72, 133, 151);">
+            <div class="date" style="background-color: rgb(89, 189, 164);" id="date_details" class="box">
                 <h1>Date</h1>
 
-                <select name="month" id="month" class="select">
-                    <option value="none"></option>
+                <select name="month" id="year" class="select">
+                    <option value="none">Select YEAR</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    
+                </select>
+
+                <select style="display: none" name="month" id="month" class="select" >
+                    <option value="none">Select MONTH</option>
                     <option value="January">January</option>
                     <option value="February">February</option>
                     <option value="March">March</option>
@@ -28,24 +39,17 @@
                     <option value="November">November</option>
                     <option value="December">December</option>
                 </select>
+                <button style="display: none;" id="confirm_date">Confirm</button>
 
-                <select name="month" id="year" class="select">
-                    <option value="none"></option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    
-                </select>
             </div>
 
-            <div id="hidden_file" class="box" style="display: none;">
-                <div class="home-rent" class="box">
+            <div style="display: none" id="date_details_show"></div>
+
+            <div id="hidden_file" class="box1" style="display: none;">
+                <div class="home-rent" style="background-color: rgb(118, 202, 198);" class="box">
                     <h1>Home Rent</h1>
                     <select name="month" id="room_num" class="select">
-                        <option value="none"></option>
+                        <option value="none">Select Room</option>
                         <option value="201">201</option>
                         <option value="202">202</option>
                         <option value="203">203</option>
@@ -55,29 +59,30 @@
                         <option value="207">207</option>
                     </select>
                     <input style="display: none;" type="number" id="room_rent_bill" placeholder="Rent Amount">
+                    <button style="display: none;" id="room_submit">Submit</button>
                 </div>
     
-                <div class="bills" style="background-color: rgb(35, 158, 167);;">
+                <div class="bills" style="background-color: rgb(35, 158, 167);">
                     <h1>Bills</h1>
                     <select name="bills" id="bills" class="select">
-                        <option value="none"></option>
+                        <option value="none">Select Bill</option>
                         <option value="gas">Gas</option>
                         <option value="elec">Electricity</option>
                         <option value="water">Water</option>
                     </select>
-                    <input style="display: none;" type="number" id="gas_bill"  placeholder="Bill Amount">
-                    
+                    <input style="display: none;" type="number" id="bill_input"  placeholder="Bill Amount">
+                    <button style="display: none;" id="bill_submit">Submit</button> 
                 </div>
     
-                <div class="others" class="box">
+                <div class="others" style="background-color: rgb(88, 182, 154);" class="box">
                     <h1>Others</h1>
-                    <input type="number" id="other_bill" placeholder="Amount"><br/>
-                    <textarea  maxlength="50" id="other_expense" placeholder="write here.."></textarea>
+                    <input type="number" style="background-color: rgb(240, 240, 240);" id="other_bill" placeholder="Amount"><br/>
+                    <textarea  maxlength="50" style="background-color: rgb(238, 238, 238);;" id="other_expense" placeholder="write here.."></textarea>
                 </div>
 
 
                 <input type="submit" id="submit" value="Submit">
-                <input type="button" id="update" value="Update" />
+                <!-- <input type="button" id="update" value="Update" /> -->
                 
             </div>
 
